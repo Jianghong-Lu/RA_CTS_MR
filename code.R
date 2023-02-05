@@ -72,8 +72,8 @@ write.csv(H_data, "RA_CTS_MR_Hdata_finn.csv")
 
 # Phenoscanner ------------------------------------------------------------
 # SNP
-res = phenoscanner(snpquery=c(b$SNP))
-write.table(res$results,"snp_pheno.txt",sep = '\t',quote = F,row.names = F)
+res = phenoscanner(snpquery=c(H_data$SNP))
+write.csv(res$results,"snp_pheno.csv")
 
 
 # Sensitivity Analysis -------------------------------------------------------------------
